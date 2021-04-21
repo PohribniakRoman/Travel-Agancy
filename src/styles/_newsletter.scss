@@ -1,0 +1,94 @@
+.newsletter {
+    & div {
+        display: flex;
+    }
+    &__browse {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        & h1 {
+            margin-top: 70px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            margin-bottom: 30px;
+            font-size: 1.875rem;
+            line-height: 1.2;
+        }
+        & ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 16px;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            padding-bottom: 60px;
+            & li {
+                margin: 15px 0;
+                color: #478ac9;
+                cursor: pointer;
+            }
+        }
+    }
+    &__news {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        &--header {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 1.875rem;
+            margin-top: 70px;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+        &--description {
+            font-family: "Open Sans", sans-serif;
+            color: #999999;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        &--form {
+            & input {
+                border: none;
+                color: #111111;
+                background-color: #f2f2f2;
+                padding: 10px 12px;
+                border-radius: 10px;
+                font-family: "Open Sans", sans-serif;
+                outline: none;
+                margin-right: 10px;
+                &::placeholder {
+                    opacity: 0.6;
+                }
+            }
+            & button {
+                cursor: pointer;
+                outline: none;
+                border: none;
+                padding: 10px 30px;
+                font-family: "Open Sans", sans-serif;
+                background-color: #478ac9;
+                color: #ffffff;
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+        &--links {
+            display: flex;
+            margin-top: 50px;
+            & li {
+                cursor: pointer;
+                font-size: 18px;
+                color: #999999;
+                padding-right: 20px;
+                transition: 0.3s;
+                &:hover {
+                    color: black;
+                }
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+}

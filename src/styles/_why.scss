@@ -1,0 +1,70 @@
+.why {
+    background-color: #e9f2fa;
+    text-align: center;
+    &__header {
+        font-family: "Roboto", sans-serif;
+        font-size: 36px;
+        padding-top: 60px;
+        color: #111111;
+    }
+    &__description {
+        margin-top: 20px;
+        font-style: italic;
+        font-family: "Open Sans", sans-serif;
+        color: #111111;
+        font-size: 18px;
+        padding-bottom: 80px;
+    }
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 30px;
+        padding-bottom: 80px;
+        &--box {
+            &:nth-child(1) {
+                background-image: url(../images/why2.jpg);
+            }
+            &:nth-child(4) {
+                background-image: url(../images/why3.jpg);
+            }
+            &:nth-child(1),
+            &:nth-child(4) {
+                background-size: cover;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                background-color: #fff;
+                div {
+                    margin: 40px 0;
+                    color: #478ac9;
+                    font-size: 45px;
+                }
+                h1 {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 24px;
+                }
+                p {
+                    margin: 20px;
+                    font-family: "Open Sans", sans-serif;
+                    font-style: italic;
+                    font-size: 14px;
+                }
+            }
+        }
+        &--img {
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/Why1.jpg);
+            background-size: cover;
+        }
+        &--item {
+            height: 530px;
+            width: 100%;
+            &:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.jorney {
+    background-color: #e9f2fa;
+    cursor: context-menu;
+    & h1 {
+        font-family: "Roboto", sans-serif;
+        padding: 50px 0 20px 0;
+        font-size: 35px;
+        text-align: center;
+        color: #478ac9;
+    }
+    & p {
+        color: #4c7397;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: italic;
+    }
+    &__gallery {
+        margin-top: 100px;
+        padding-bottom: 60px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        &--card {
+            width: 360px;
+            height: 372px;
+            & div {
+                height: 298px;
+                object-fit: cover;
+                display: block;
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+        }
+            & h3 {
+                background-color: #fff;
+                width: 360px;
+                height: 74px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                & i {
+                    opacity: 0.5;
+                    margin: 0 10px;
+                    font-size: 25px;
+                }
+                & span{
+                    font-size: 20px;
+                    font-style: italic;
+                    font-family: "Open Sans", sans-serif;
+                    color: #111;
+
+                }
+        }
+    }
+}

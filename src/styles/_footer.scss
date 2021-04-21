@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #292e33;
+    height: 250px;
+    & h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+    }
+    & ul {
+        display: flex;
+        & li {
+            padding: 0 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+            &:hover {
+                color: #478ac9;
+            }
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+    }
+    & p {
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+a{
+    text-decoration: none;
+}

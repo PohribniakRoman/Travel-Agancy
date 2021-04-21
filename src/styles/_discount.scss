@@ -1,0 +1,74 @@
+.discount {
+    background-image: linear-gradient(0deg, rgba(41, 46, 51, 0.25), rgba(41, 46, 51, 0.25)),
+        url("../images/DiscountBG.jpg");
+    max-height: 500px;
+    min-height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & div {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: right;
+        color: #fff;
+    }
+    &__header {
+        margin-top: 100px;
+        font-size: 36px;
+        font-family: "Roboto", sans-serif;
+    }
+    &__description {
+        font-family: "Open Sans", sans-serif;
+        width: 50%;
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    &__button {
+        z-index: 0;
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        text-decoration: none;
+        position: relative;
+        box-sizing: border-box;
+        margin-top: 30px;
+        & div {
+            box-sizing: border-box;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 101%;
+            height: 100%;
+            background-color: #fff;
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-transform: scale3d(1, 0, 1);
+            transform: scale3d(1, 0, 1);
+            -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1),
+                -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:hover div {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+        }
+        & span{
+            z-index: 10;
+        }
+        &:hover span{
+            color: #000;
+        }
+    }
+}
